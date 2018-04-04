@@ -41,14 +41,20 @@ app.get('/', (req, res) => { // request, response
   //   name: 'Ricardo',
   //   likes: [12, 'hockey']
   // });
+  console.log(__dirname);
+  console.log(req.route.path);
+  // console.log(req.route);
   res.render('home.hbs', {
     pageTitle: 'Home page',
     welcomeMessage: 'Welcome',
+    dirname: __dirname
     // currentYear: new Date().getFullYear()
   });
 });
 
 app.get('/donaciones', (req, res) => { // request, response
+  // console.log(__dirname);
+  // console.log(req.route.path);
   res.render('donaciones.hbs', {
     pageTitle: 'Quiero ayudar',
     message: 'Donaciones go here',
@@ -56,7 +62,16 @@ app.get('/donaciones', (req, res) => { // request, response
   });
 });
 
+// app.get('/beneficiados', (req, res) => { // request, response
+//   res.render('grupos.hbs', {
+//     pageTitle: 'Beneficiados',
+//     bodyMessage: 'test for the win'
+//   });
+// });
+
 app.get('/beneficiados/:grupo', (req, res) => { // request, response
+  // console.log(__dirname);
+  // console.log(req.route.path);
   res.render('grupos.hbs', {
     pageTitle: 'Beneficiados',
     bodyMessage: 'test for the win',
