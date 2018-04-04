@@ -72,10 +72,14 @@ app.get('/donaciones', (req, res) => { // request, response
 app.get('/beneficiados/:grupo', (req, res) => { // request, response
   // console.log(__dirname);
   // console.log(req.route.path);
+  // grupoName: req.params.grupo
   res.render('grupos.hbs', {
     pageTitle: 'Beneficiados',
-    bodyMessage: 'test for the win',
-    grupo: req.params.grupo
+    grupoName: req.params.grupo,
+    grupoLocation: "Mexico - GDL",
+    recaudado: "1 234 123",
+    grupoLocation: "Mexico - GDL",
+    address: "h23o8472yt298347hf103948yf103478f"
     // currentYear: new Date().getFullYear()
   });
 });
