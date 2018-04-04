@@ -1,0 +1,111 @@
+/* Your custom styles */
+html,
+body,
+header,
+#intro, 
+#error {
+  height: 100%;
+}
+
+#intro {
+  /* background: url("http://www.auto-power-girl.com/high-resolution-wallpapers/texas-ranger-concept-2015/texas-ranger-concept-2015-27.jpg") no-repeat center center fixed; */
+  background: url("http://yistishoes.org/views/assets/img/bg_shoes.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#error {
+  background: url("http://www.auto-power-girl.com/high-resolution-wallpapers/texas-ranger-concept-2015/texas-ranger-concept-2015-27.jpg") no-repeat center center fixed;
+  /* background: url("http://www.ra.ac.ae/wp-content/uploads/2014/07/section-BG-dark.jpg") no-repeat center center fixed; */
+  /* background: url("https://static1.squarespace.com/static/585e7652ebbd1af27cd46539/t/586bcbd35016e1c6645f51c4/1483459544638/watercolor-grunge-000029-orange-red-violet.jpg?format=1500w") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* @media screen and (max-width: 767px) {
+
+  .table-responsive {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #DDD;
+  }
+} */
+
+
+/* paralex */
+.top-nav-collapse {
+  background-color: #141414 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #141414 !important;
+  }
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.jarallax {
+  height: 1000px;
+}
+
+#logo_yistishoes {
+  max-width: 381px;
+  height: auto;
+}
+
+/* phones */
+@media (max-width: 740px) {
+  .jarallax {
+      height: 300px;
+  }
+
+  #intro {
+    background: url("http://yistishoes.org/views/assets/img/bg_shoes_sm.jpg") no-repeat center center;
+    /* background: url("http://localhost/require-mind/views/assets/img/bg_shoes_sm_2.jpg") no-repeat center center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #error-section {
+    /* background: url("https://static1.squarespace.com/static/585e7652ebbd1af27cd46539/t/586bcbd35016e1c6645f51c4/1483459544638/watercolor-grunge-000029-orange-red-violet.jpg?format=1500w") no-repeat center center; */
+    background: url("http://www.ra.ac.ae/wp-content/uploads/2014/07/section-BG-dark.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #logo_yistishoes {
+    max-width: 181px;
+  }
+
+}
+
+/* tablets */
+/* @media (min-width: 769px) and (max-width: 1025px) { */
+@media (min-width: 741px) and (max-width: 1025px) {
+  .jarallax {
+      height: 500px;
+  }
+  #logo_yistishoes {
+    max-width: 281px;
+  }
+}
+   
