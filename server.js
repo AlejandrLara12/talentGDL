@@ -44,10 +44,15 @@ app.get('/', (req, res) => { // request, response
   console.log(__dirname);
   console.log(req.route.path);
   // console.log(req.route);
-  res.render('home.hbs', {
-    pageTitle: 'Home page',
-    welcomeMessage: 'Welcome',
-    dirname: __dirname
+  // res.render('home.hbs', {
+  //   pageTitle: 'Home page',
+  //   welcomeMessage: 'Welcome',
+  //   dirname: __dirname
+  //   // currentYear: new Date().getFullYear()
+  // });
+  res.render('donaciones.hbs', {
+    pageTitle: 'Quiero ayudar',
+    message: 'Donaciones go here',
     // currentYear: new Date().getFullYear()
   });
 });
