@@ -9,7 +9,7 @@
     "test-watch": "nodemon --exec \"npm test\"",
     "__comment": "'test': 'echo \"Error: no test specified\" && exit 1'"
   },
-  "author": "",
+  "author": "Ricardo Lara",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",

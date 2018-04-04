@@ -48,6 +48,23 @@ app.get('/', (req, res) => { // request, response
   });
 });
 
+app.get('/donaciones', (req, res) => { // request, response
+  res.render('donaciones.hbs', {
+    pageTitle: 'Quiero ayudar',
+    message: 'Donaciones go here',
+    // currentYear: new Date().getFullYear()
+  });
+});
+
+app.get('/beneficiados/:grupo', (req, res) => { // request, response
+  res.render('grupos.hbs', {
+    pageTitle: 'Beneficiados',
+    bodyMessage: 'test for the win',
+    grupo: req.params.grupo
+    // currentYear: new Date().getFullYear()
+  });
+});
+
 app.get('/test', (req, res) => { // request, response
   res.render('temp.hbs', {
     pageTitle: 'Projects Page',

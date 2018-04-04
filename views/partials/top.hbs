@@ -80,7 +80,7 @@ desired effect
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
+          {{!-- <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
@@ -95,7 +95,7 @@ desired effect
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="assets/img/talent_icon.png" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -112,12 +112,15 @@ desired effect
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
-          </li>
+          </li> --}}
           <!-- /.messages-menu -->
 
           <!-- Notifications Menu -->
-          <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
+                <!-- Inner Menu: contains the notifications -->
+                    <!-- start notification -->
+                  <!-- end notification -->
+          {{!-- <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
@@ -125,21 +128,19 @@ desired effect
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
               <li>
-                <!-- Inner Menu: contains the notifications -->
                 <ul class="menu">
-                  <li><!-- start notification -->
+                  <li>
                     <a href="#">
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
                     </a>
                   </li>
-                  <!-- end notification -->
                 </ul>
               </li>
               <li class="footer"><a href="#">View all</a></li>
             </ul>
-          </li>
+          </li> --}}
           <!-- Tasks Menu -->
-          <li class="dropdown tasks-menu">
+          {{!-- <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
@@ -174,20 +175,20 @@ desired effect
                 <a href="#">View all tasks</a>
               </li>
             </ul>
-          </li>
+          </li> --}}
           <!-- User Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="assets/img/talent_icon.png" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">{{ userName }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="assets/img/talent_icon.png" class="img-circle" alt="User Image">
 
                 <p>
                   {{ userName }} - Web Developer
@@ -237,7 +238,8 @@ desired effect
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          {{!-- <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
+          <img src="assets/img/talent_icon.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>{{ userName }}</p>
@@ -260,37 +262,23 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HERRAMIENTAS</li>
+        <li class="header">VIEWS</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="?controller=admin&action=index"><i class="fa fa-th"></i> <span>Menu</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Users</span></a></li>
+        <li class="active"><a href="/donaciones"><i class="fa fa-th"></i> <span>Donaciones</span></a></li>
+        {{!-- <li><a href="#"><i class="fa fa-link"></i> <span>Users</span></a></li> --}}
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href=""><i class="fa fa-users"></i> <span>Beneficiados</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="/beneficiados/reconstruyendoMexico"><i class="fa fa-circle-o"></i>Reconstruyendo Mexico</a></li>
+            <li><a href="/beneficiados/edcuandoMexico"><i class="fa fa-circle-o"></i>Becas</a></li>
           </ul>
         </li>
 
-
-        <li class="treeview">
-          <a href="#"><i class="fa fa-users"></i> <span>Usuarios</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="?controller=admin&action=addUser"><i class="fa fa-user-plus"></i>Agregar Usuario</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
-
-
-        <li class="treeview">
+        {{!-- <li class="treeview">
           <a href="#"><i class="fa fa-cubes"></i> <span>Pedidos</span>
             <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
           </a>
@@ -299,7 +287,7 @@ desired effect
             <li><a href="?controller=admin&action=addUser">Gestionar</a></li>
             <li><a href="?controller=admin&action=addUser">Hacer Pedido</a></li>
           </ul>
-        </li>
+        </li> --}}
       </ul>
       <!-- /.sidebar-menu -->
     </section>
