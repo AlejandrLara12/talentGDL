@@ -3,7 +3,7 @@ $('#btn_donar').click(function() {
   console.log( $('#donation_name').val() );
   let request = $.ajax(
     {
-      url: 'http://localhost:3000/payment',
+      url: '/payment',
       type: 'GET',
       data: {
         name: $('#donation_name').val(),
