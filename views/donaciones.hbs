@@ -1,50 +1,50 @@
 {{> top }}
 {{!-- {{ message }} --}}
-<div class="box box-primary">
-              <h3 class="box-title">Lets team up</h3>
-            <div class="box-header with-border">
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form role="form">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Name</label>
-                  <input type="name" class="form-control" id="donation_name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="donation_email" placeholder="email@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">PayPal</label>
-                  <input type="paypal" class="form-control" id="donation_email" placeholder="Paypal">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Address</label>
-                  <input type="privatekey" class="form-control" id="donation_key" placeholder="0000000000000000000000000000000000000000">
-                </div>
-                {{!-- <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
+<div class="box box-primary" style="max-width: 600px; margin: 0px auto;">
+  <h3 class="box-title">We need your help</h3>
+  <div class="box-header with-border">
+  </div>
+  <!-- /.box-header -->
+  <!-- form start -->
+  <form role="form">
+    <div class="box-body">
+      <div class="form-group">
+        <label for="exampleInputPassword1">Name</label>
+        <input type="name" class="form-control" id="donation_name" placeholder="Name" value="Person Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="donation_email" placeholder="something@email.com" value="person@email.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">PayPal</label>
+        <input type="paypal" class="form-control" id="donation_paypal" placeholder="Paypal" >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Address</label>
+        <input type="privatekey" class="form-control" id="donation_key" placeholder="000000000000000000000000000000000" value="h23o8472yt298347hf103948yf103478f">
+      </div>
+      {{!-- <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
 
-                  <p class="help-block">Example block-level help text here.</p>
-                </div> --}}
-                {{!-- <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
-                </div> --}}
-              </div>
-              <!-- /.box-body -->
+        <p class="help-block">Example block-level help text here.</p>
+      </div> --}}
+      {{!-- <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div> --}}
+    </div>
+    <!-- /.box-body -->
 
-              <div class="box-footer">
-                <a href="https://www.paypal.com/" target="_blank">
-                  <button type="submit" class="btn btn-primary">
-                    Donate
-                  </button>
-                </a>
-              </div>
-            </form>
-          </div>
+    <div class="box-footer">
+      <a href="" id="btn_donar">
+        <button type="submit" class="btn btn-primary">
+          Donate
+        </button>
+      </a>
+    </div>
+  </form>
+</div>
 {{> btm }}

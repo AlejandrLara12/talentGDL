@@ -41,8 +41,8 @@ app.get('/', (req, res) => { // request, response
   //   name: 'Ricardo',
   //   likes: [12, 'hockey']
   // });
-  console.log(__dirname);
-  console.log(req.route.path);
+  // console.log(__dirname);
+  // console.log(req.route.path);
   // console.log(req.route);
   // res.render('home.hbs', {
   //   pageTitle: 'Home page',
@@ -63,6 +63,24 @@ app.get('/donaciones', (req, res) => { // request, response
   res.render('donaciones.hbs', {
     pageTitle: 'Quiero ayudar',
     message: 'Donaciones go here',
+    // currentYear: new Date().getFullYear()
+  });
+});
+
+app.get('/payment', (req, res) => { // request, response
+  console.log('req.query: ', req.query);
+  setTimeout(function() { /* code here */ }, 1000);
+
+  let error = false;
+  let state = (!error) ? 'success' : 'danger';
+  let message = (!error) ? 'Thank you!' : 'We are sorry';
+  let detail = (!error) ? 'Thanks for your support.' : 'We detected an error.';
+  res.send({
+    key: 'payment worked',
+    message: message,
+    detail: detail,
+    error: error,
+    state: state
     // currentYear: new Date().getFullYear()
   });
 });
@@ -89,6 +107,24 @@ app.get('/beneficiados/:grupo', (req, res) => { // request, response
   });
 });
 
+app.get('/registros', (req, res) => { // request, response
+  res.render('registros.hbs', {
+    pageTitle: 'Registros Page'
+    // currentYear: new Date().getFullYear()
+  });
+});
+
+app.get('/status/:state/:message/:detail', (req, res) => { // request, response
+  console.log(req.params);
+  // state: success|danger|warning|info
+  res.render('status.hbs', {
+    pageTitle: 'Status Page',
+    state: req.params.state,
+    message: req.params.message,
+    detail: req.params.detail
+    // currentYear: new Date().getFullYear()
+  });
+});
 app.get('/test', (req, res) => { // request, response
   res.render('temp.hbs', {
     pageTitle: 'Projects Page',

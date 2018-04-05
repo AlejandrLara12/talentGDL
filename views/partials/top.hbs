@@ -20,7 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
-  <link rel="stylesheet" href="/assets/dist/css/skins/skin-yellow.min.css">
+  <link rel="stylesheet" href="/assets/dist/css/skins/skin-black.min.css">
 
   <!-- sweet alert css -->
   <!-- <link rel="stylesheet" href="assets/dist/sweetalert.css"> -->
@@ -35,6 +35,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="/assets/js/jquery-3.2.1.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -56,14 +58,14 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-yellow sidebar-mini fixed">
-<div class="wrapper">
+<body class="hold-transition skin-black sidebar-mini fixed">
+<div class="wrapper" style="background: url('https://static1.squarespace.com/static/542c4f41e4b0c781d8f41ea6/t/542c9853e4b003527579686a/1412208738348/GET-INVOLVED_bg.jpg?format=1500w') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 
   <!-- Main Header -->
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>G</b>DL</span>
       <!-- logo for regular state and mobile devices -->
@@ -279,6 +281,8 @@ desired effect
           </ul>
         </li>
 
+        <li class="active"><a href="/registros"><i class="fa fa-th"></i> <span>Registros</span></a></li>
+
         {{!-- <li class="treeview">
           <a href="#"><i class="fa fa-cubes"></i> <span>Pedidos</span>
             <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
@@ -296,7 +300,9 @@ desired effect
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="background: none;">
+  {{!-- <div class="content-wrapper"  style="background-image: url('https://static1.squarespace.com/static/542c4f41e4b0c781d8f41ea6/t/542c9853e4b003527579686a/1412208738348/GET-INVOLVED_bg.jpg?format=1500w'); background-size: cover; background-repeat: no-repeat;"> --}}
+  {{!-- "background: url('https://static1.squarespace.com/static/542c4f41e4b0c781d8f41ea6/t/542c9853e4b003527579686a/1412208738348/GET-INVOLVED_bg.jpg?format=1500w') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;" --}}
     <!-- Content Header (Page header) -->
     {{!-- <section class="content-header">
       <h1>
